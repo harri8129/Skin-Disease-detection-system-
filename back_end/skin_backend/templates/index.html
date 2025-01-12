@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+   <div class="'div_1"> 
+   <h1 class="ha">Skin Detection</h1>
+
+   <form action="" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{form.as_table}}
+    
+      <input type="submit" value="Detect" >
+   </form>
+
+  {% if upload %}
+     <label>{{results}}</label>
+     <label>{{ext_detail}}</label>
+
+  {% endif %}
+   
+   </div>
+</body>
+</html>

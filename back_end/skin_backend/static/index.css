@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    padding-left: 10px;
+}
+
+input[type="file"] {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px; /* Reduced padding */
+    font-size: 14px;   /* Smaller font size */
+    background-color: #007BFF;
+    color: white;
+    border:#333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result Section */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-left: 5px solid #007BFF;
+    border-radius: 5px;
+}
+
+.result h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+.result p {
+    margin: 5px 0 0;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
