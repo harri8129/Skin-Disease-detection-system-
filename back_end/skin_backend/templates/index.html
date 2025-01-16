@@ -1,29 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   {% load static %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'index.css' %}">
-</head>
-<body>
-   <div class="'div_1"> 
-   <h1 class="ha">Skin Detection</h1>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    {% load static %}  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Skin Detection</title>  
+    <link rel="stylesheet" href="{% static 'index.css' %}">  
+</head>  
+<body>  
+   <div class="container">  
+       <h1 class="title">Skin Detection</h1>  
 
-   <form action="" method="POST" enctype="multipart/form-data">
-      {% csrf_token %}
-      {{form.as_table}}
-    
-      <input type="submit" value="Detect" >
-   </form>
+       <form action="" method="POST" enctype="multipart/form-data">  
+          {% csrf_token %}  
+          {{form.as_table}}  
 
-  {% if upload %}
-     <label>{{results}}</label>
-     <label>{{ext_detail}}</label>
+          <input type="submit" class="btn-detect" value="Detect">  
+       </form>  
 
-  {% endif %}
-   
-   </div>
-</body>
-</html>
+       {% if upload %}  
+           <div class="result-container">  
+               <label class="result-label">{{results}}</label>  
+               <label class="result-details">{{ext_detail}}</label>  
+           </div>  
+       {% endif %}  
+   </div>  
+</body>  
+</html>  
